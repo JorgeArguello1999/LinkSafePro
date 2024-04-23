@@ -6,7 +6,7 @@ This website is maked for resolve differents problems with a personal security
 
 ## Tools
 - URL Shortener 
-- Text excription
+- Text encription
 - Speed calculation
 - Decimal to binary
 - Binary to decimal 
