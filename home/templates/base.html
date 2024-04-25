@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #60666e;
+        }
         header {
             background-color: #333;
             color: #fff;
@@ -19,9 +22,24 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
-            position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .container {
+            background-color: #222;
+            color: #fff; 
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px; 
+        }
+        .container h1, .container h2, .container h3, .container h4 {
+            margin-top: 20px; 
+            color: #f0ad4e; 
+        }
+        .container p {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -59,7 +77,6 @@
     <!-- Contenido de la página -->
     <div class="container">
         {% block content %}
-        <!-- Aquí va el contenido específico de cada página -->
         {% endblock %}
     </div>
     
