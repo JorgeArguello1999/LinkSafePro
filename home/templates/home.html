@@ -2,4 +2,40 @@
 {% load static %}
 
 {% block content %}
+<h1>Welcome to LinkSafe</h1>
+<div class="row">
+    <div class="col-md-4">
+        <img src="{% static 'url_shortener.jpg' %}" alt="URL Shortener" class="img-fluid" height="100">
+        <h2>URL Shortener</h2>
+        <p>Shorten your long URLs to save space and make sharing easier.</p>
+    </div>
+
+    <div class="col-md-4">
+        <img src="{% static 'text_encrypt.png' %}" alt="Text Encryption" class="img-fluid" height="100">
+        <h2>Text Encryption</h2>
+        <p>Encrypt your sensitive text messages to keep them secure.</p>
+    </div>
+    
+    <div class="col-md-4">
+        <img src="{% static 'speed_calculation.png' %}" alt="Speed Calculation" class="img-fluid" height="100">
+        <h2>Speed Calculation</h2>
+        <p>Calculate the speed of your internet connection with precision.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static 'decimal_binary.png' %}" alt="Decimal to Binary" class="img-fluid" height="100">
+        <h2>Decimal to Binary</h2>
+        <p>Convert decimal numbers to binary format effortlessly.</p>
+    </div>
+
+    <div class="col-md-6">
+        <img src="{% static 'binary_decimal.png' %}" alt="Binary to Decimal" class="img-fluid" height="100">
+        <h2>Binary to Decimal</h2>
+        <p>Convert binary numbers back to decimal for easy understanding.</p>
+    </div>
+</div>
+<p>LinkSafe is a toolbox designed to enhance security and provide useful functions for users who want to protect their accounts and other services.</p>
+
 {% endblock %}
