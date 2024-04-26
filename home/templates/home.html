@@ -3,6 +3,23 @@
 
 {% block content %}
 <h1>Welcome to LinkSafe</h1>
+
+<style>
+    .img-fluid{
+        width: 100px;
+        height: 100px;
+    }
+
+    .col-md-4{
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    .col-md-6 {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+</style>
+
 <div class="row">
     <div class="col-md-4">
         <img src="{% static 'url_shortener.jpg' %}" alt="URL Shortener" class="img-fluid" height="100">
@@ -17,9 +34,9 @@
     </div>
     
     <div class="col-md-4">
-        <img src="{% static 'speed_calculation.png' %}" alt="Speed Calculation" class="img-fluid" height="100">
+        <img src="{% static 'speed_calculation.png' %}" alt="Speed Calculation" class="img-fluid" height="100px">
         <h2>Speed Calculation</h2>
-        <p>Calculate the speed of your internet connection with precision.</p>
+        <p>Calculate the speed with MRUV forms.</p>
     </div>
 </div>
 
@@ -36,6 +53,7 @@
         <p>Convert binary numbers back to decimal for easy understanding.</p>
     </div>
 </div>
-<p>LinkSafe is a toolbox designed to enhance security and provide useful functions for users who want to protect their accounts and other services.</p>
+
+<p><i>LinkSafe is a toolbox designed to enhance security and provide useful functions for users who want to protect their accounts and other services.</i></p>
 
 {% endblock %}
