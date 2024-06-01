@@ -27,7 +27,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <a href="">
+        <a href="{% url 'textencrypt' %}">
             <img src="{% static 'text_encrypt.png' %}" alt="Text Encryption" class="img-fluid" height="100">
             <h2>Text Encryption</h2>
             <p>Encrypt your sensitive text messages to keep them secure.</p>
@@ -35,23 +35,29 @@
     </div>
     
     <div class="col-md-6">
-        <img src="{% static 'speed_calculation.png' %}" alt="Speed Calculation" class="img-fluid" height="100px">
-        <h2>Speed Calculation</h2>
-        <p>Calculate the speed with MRUV forms.</p>
+        <a href="{% url 'speed' %}">
+            <img src="{% static 'speed_calculation.png' %}" alt="Speed Calculation" class="img-fluid" height="100px">
+            <h2>Speed Calculation</h2>
+            <p>Calculate the speed with MRUV forms.</p>
+        </a>
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-6">
-        <img src="{% static 'decimal_binary.png' %}" alt="Decimal to Binary" class="img-fluid" height="100">
-        <h2>Decimal to Binary</h2>
-        <p>Convert decimal numbers to binary format effortlessly.</p>
+        <a href="{% url 'binary' %}">
+            <img src="{% static 'decimal_binary.png' %}" alt="Decimal to Binary" class="img-fluid" height="100">
+            <h2>Decimal to Binary</h2>
+            <p>Convert decimal numbers to binary format effortlessly.</p>
+        </a>
     </div>
 
     <div class="col-md-6">
-        <img src="{% static 'binary_decimal.png' %}" alt="Binary to Decimal" class="img-fluid" height="100">
-        <h2>Binary to Decimal</h2>
-        <p>Convert binary numbers back to decimal for easy understanding.</p>
+        <a href="{% url 'binary' %}">
+            <img src="{% static 'binary_decimal.png' %}" alt="Binary to Decimal" class="img-fluid" height="100">
+            <h2>Binary to Decimal</h2>
+            <p>Convert binary numbers back to decimal for easy understanding.</p>
+        </a>
     </div>
 </div>
 
