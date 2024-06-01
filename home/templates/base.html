@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="{% static 'logo.jpg' %}" type="image/jpeg">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- highlight for python content -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <style>
         body {
             background-color: #60666e;
@@ -40,6 +46,10 @@
         }
         .container p {
             margin-bottom: 20px;
+        }
+
+        .devcontainer{
+            text-align: justify;
         }
     </style>
 </head>
@@ -75,6 +85,15 @@
     <div class="container">
         {% block content %}
         {% endblock %}
+        <div class="devcontainer">
+            <pre>
+                <code class="language-python">
+                    {% comment %} For all code that you need publicate {% endcomment %}
+                    {% block devcontainer %}
+                    {% endblock %}
+                </code>
+            </pre>
+        </div>
     </div>
     
     <!-- Footer -->
