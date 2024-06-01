@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'textencrypt',
     'speed',
     'binary',
-    'urlshortener',
     'home',
 ]
 
