@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def front(request):
+def get(request):
     return render(request, 'textencrypt.html')
