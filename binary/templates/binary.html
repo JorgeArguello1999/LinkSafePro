@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block content %}
-<h2>Conversión Binario-Decimal</h2>
+<h2>Convert Binary <-> Decimal</h2>
 
 <form method="post" action="">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Convertir</button>
+    <button type="submit">Convert</button>
 </form>
 {% if result is not None %}
     <h3>Resultado</h3> 
