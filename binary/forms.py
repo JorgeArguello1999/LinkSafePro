@@ -3,8 +3,8 @@ from django import forms
 
 class ConversionForm(forms.Form):
     CONVERSION_CHOICES = [
-        ('binario_a_decimal', 'Binario a Decimal'),
-        ('decimal_a_binario', 'Decimal a Binario'),
+        ('binary_decimal', 'Binario a Decimal'),
+        ('decimal_binary', 'Decimal a Binario'),
     ]
     conversion_type = forms.ChoiceField(
         choices=CONVERSION_CHOICES,

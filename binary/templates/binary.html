@@ -10,16 +10,13 @@
     <button type="submit">Convertir</button>
 </form>
 {% if result is not None %}
-    <p>Resultado: {{ result }}</p>
+    <h3>Resultado</h3> 
+    {{ result }}
 {% endif %}
 
 {% endblock %}
 
 
 {% block devcontainer %}
-# Ejemplo de código en Python
-def saludar(nombre):
-    return f"Hola, {nombre}"
-
-print(saludar("Mundo"))
+{{ code }}
 {% endblock %}
