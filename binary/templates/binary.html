@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block content %}
-<h1>code</h1>
+<h2>Conversión Binario-Decimal</h2>
+
+<form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Convertir</button>
+</form>
+{% if result is not None %}
+    <p>Resultado: {{ result }}</p>
+{% endif %}
+
 {% endblock %}
 
 
