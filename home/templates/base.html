@@ -86,13 +86,7 @@
         {% block content %}
         {% endblock %}
         <div class="devcontainer">
-            <pre>
-                <code class="language-python">
-                    {% comment %} For all code that you need publicate {% endcomment %}
-                    {% block devcontainer %}
-                    {% endblock %}
-                </code>
-            </pre>
+            <pre><code class="language-python">{% block devcontainer %}{% endblock %}</code></pre>
         </div>
     </div>
     
