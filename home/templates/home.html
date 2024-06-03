@@ -44,7 +44,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <a href="{% url 'binary' %}">
             <img src="{% static 'decimal_binary.png' %}" alt="Decimal to Binary" class="img-fluid" height="100">
             <h2>Decimal to Binary</h2>
@@ -52,11 +52,19 @@
         </a>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <a href="{% url 'binary' %}">
             <img src="{% static 'binary_decimal.png' %}" alt="Binary to Decimal" class="img-fluid" height="100">
             <h2>Binary to Decimal</h2>
             <p>Convert binary numbers back to decimal for easy understanding.</p>
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a href="{% url 'password' %}">
+            <img src="{% static 'password.png' %}" alt="Generate Passwords" class="img-fluid" height="100">
+            <h2>Generate Passwords</h2>
+            <p>generates hard-to-crack passwords</p>
         </a>
     </div>
 </div>
