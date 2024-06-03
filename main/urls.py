@@ -6,5 +6,6 @@ urlpatterns = [
     path('text/', include('textencrypt.urls')),
     path('speed/', include('speed.urls')),
     path('binary/', include('binary.urls')),
+    path('password/', include('password.urls')),
     path('', include('home.urls')),
 ]
