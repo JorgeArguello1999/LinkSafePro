@@ -19,10 +19,10 @@ def get(request):
             tiempo = float(form.cleaned_data.get('tiempo'))
 
             try:
-                if opcion == '1': result = speed.calcular_velocidad_final(velocidad_inicial, aceleracion, tiempo)
-                elif opcion == '2': result = speed.calcular_velocidad_inicial(velocidad_final, aceleracion, tiempo)
-                elif opcion == '3': result = speed.calcular_aceleracion(velocidad_final, velocidad_inicial, tiempo)
-                elif opcion == '4': result = speed.calcular_tiempo(velocidad_final, velocidad_inicial, aceleracion)
+                if opcion == 'v_f': result = speed.calcular_velocidad_final(velocidad_inicial, aceleracion, tiempo)
+                elif opcion == 'v_i': result = speed.calcular_velocidad_inicial(velocidad_final, aceleracion, tiempo)
+                elif opcion == 'a': result = speed.calcular_aceleracion(velocidad_final, velocidad_inicial, tiempo)
+                elif opcion == 't': result = speed.calcular_tiempo(velocidad_final, velocidad_inicial, aceleracion)
             except Exception as e:
                 print(e)
                 result = f"Error: {e}"

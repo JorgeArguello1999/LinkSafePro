@@ -58,6 +58,33 @@
     {{ result }}
 {% endif %}
 
+<script>
+  var opcion = document.getElementById('id_opcion');
+  var v_f = document.getElementById('id_velocidad_final');
+  var v_i = document.getElementById('id_velocidad_inicial');
+  var a = document.getElementById('id_aceleracion');
+  var t = document.getElementById('id_tiempo');
+
+  opcion.addEventListener('change', function() {
+    var opcionSeleccionada = opcion.value;
+    switch (opcionSeleccionada) {
+      case "v_f":
+        v_f.disabled = true;
+        break;
+      case "v_i":
+        v_i.disabled = true;
+        break;
+      case "a":
+        a.disabled = true;
+        break;
+      case "t":
+        t.disabled = true;
+        break;
+      default:
+        break;
+    }
+  });
+</script>
 {% endblock %}
 
 

@@ -2,10 +2,11 @@ from django import forms
 
 class CalculoForm(forms.Form):
     OPCIONES = [
-        ('1', 'Velocidad final (v_f)'),
-        ('2', 'Velocidad inicial (v_i)'),
-        ('3', 'Aceleración (a)'),
-        ('4', 'Tiempo (t)'),
+        ('-- Selecciona --', '--Selecciona--'),
+        ('v_f', 'Velocidad final (v_f)'),
+        ('v_i', 'Velocidad inicial (v_i)'),
+        ('a', 'Aceleración (a)'),
+        ('t', 'Tiempo (t)'),
     ]
     
     opcion = forms.ChoiceField(choices=OPCIONES, label='Seleccione la variable que desea calcular')
