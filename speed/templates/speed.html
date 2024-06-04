@@ -1,6 +1,66 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block content %}
+<style>
+    table {
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid gray;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: black;
+    }
+</style>
+<h2>Speed Calculator</h2>
+
+<h3>Tabla de Variables Necesarias</h3>
+<table>
+    <tr>
+        <th>Opción</th>
+        <th>Descripción</th>
+        <th>Variables Necesarias</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Velocidad final (v_f)</td>
+        <td>Velocidad inicial (v_i), Aceleración (a), Tiempo (t)</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Velocidad inicial (v_i)</td>
+        <td>Velocidad final (v_f), Aceleración (a), Tiempo (t)</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Aceleración (a)</td>
+        <td>Velocidad final (v_f), Velocidad inicial (v_i), Tiempo (t)</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Tiempo (t)</td>
+        <td>Velocidad final (v_f), Velocidad inicial (v_i), Aceleración (a)</td>
+    </tr>
+</table>
+
+<form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Convert</button>
+</form>
+{% if result is not None %}
+    <h3>Resultado</h3> 
+    {{ result }}
+{% endif %}
+
+{% endblock %}
+
+
+{% block devcontainer %}
+{{ code }}
 {% endblock %}
