@@ -2,5 +2,20 @@
 {% load static %}
 
 {% block content %}
-<h1>Hola</h1>
+<form action="" method="POST">
+    <h2>Encrypt or Decrypt your Text</h2>
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+</form>
+
+{% if result is not None %}
+    <h3>Result:</h3>
+    {{ result }}
+{% endif %}
+
+{% endblock %}
+
+{% block devcontainer %}
+{{ code }}
 {% endblock %}
