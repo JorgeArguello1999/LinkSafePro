@@ -12,6 +12,11 @@ def get(request):
     if request.method == 'POST': 
         form = forms.PasswordForm(request.POST)
         if form.is_valid(): 
-            result = password.generate_password(12)
+            try:
+                input_data = int(form.cleaned_data.get('length'))
+                result = password.generate_password(input_data)
+
+            except Exception as e:
+                result: f'Error: {e}'
 
     return render(request, 'password.html', {'form': form, 'code': code , 'result': result})
