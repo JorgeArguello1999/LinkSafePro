@@ -19,7 +19,7 @@ SECRET_KEY = getenv('DJANGO_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv('DEBUG')
 
-ALLOWED_HOSTS = ['linksafepro.onrender.com']
+ALLOWED_HOSTS = ['linksafepro.onrender.com', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
