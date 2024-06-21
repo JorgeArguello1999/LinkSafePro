@@ -21,7 +21,7 @@ def get(request):
                 input_data = int(input_data)
                 result = binary.decimal_binary(input_data)
             if conversion_type == 'binary_decimal': 
-                input_data = str(input_data)
+                input_data = int(input_data)
                 result = binary.binary_decimal(input_data)
             
         except Exception as e:
