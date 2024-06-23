@@ -8,12 +8,13 @@
     {{ form }}
     <button type="submit">Submit</button>
 </form>
+{% endblock %}
 
+{% block result %}
 {% if result is not None %}
     <h3>Result:</h3>
-    {{ result }}
+    <p>{{ result }}</p>
 {% endif %}
-
 {% endblock %}
 
 {% block devcontainer %}

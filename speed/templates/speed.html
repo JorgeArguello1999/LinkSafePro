@@ -53,9 +53,12 @@
     {{ form.as_p }}
     <button type="submit">Convert</button>
 </form>
+{% endblock %}
+
+{% block result %}
 {% if result is not None %}
     <h3>Resultado</h3> 
-    {{ result }}
+    <p>{{ result }}</p>
 {% endif %}
 
 <script>
