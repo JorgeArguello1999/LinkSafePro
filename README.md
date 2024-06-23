@@ -4,8 +4,9 @@
 
 This website is maked for resolve differents problems with a personal security 
 
+For this website is used a Django Framework and uvicorn.
+
 ## Tools
-- URL Shortener 
 - Text encription
 - Speed calculation
 - Decimal to binary
