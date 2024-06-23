@@ -8,7 +8,7 @@ def calcular_velocidad_inicial(velocidad_final:float=0.0, aceleracion:float=0.0,
 
 def calcular_aceleracion(velocidad_final:float=0.0, velocidad_inicial:float=0.0, tiempo:float=1.0):
     respuesta = (velocidad_final - velocidad_inicial) / tiempo
-    return f'La aceleración: {respuesta} m/s' 
+    return f'La aceleración: {respuesta} m/s²' 
 
 def calcular_tiempo(velocidad_final:float=0.0, velocidad_inicial:float=0.0, aceleracion:float=1.0):
     respuesta = (velocidad_final - velocidad_inicial) / aceleracion
