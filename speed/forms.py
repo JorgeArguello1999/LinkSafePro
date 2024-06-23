@@ -7,6 +7,7 @@ class CalculoForm(forms.Form):
         ('v_i', 'Velocidad inicial (v_i)'),
         ('a', 'Aceleración (a)'),
         ('t', 'Tiempo (t)'),
+        ('d', 'Distancia (d)')
     ]
     
     opcion = forms.ChoiceField(choices=OPCIONES, label='Seleccione la variable que desea calcular')
@@ -14,3 +15,4 @@ class CalculoForm(forms.Form):
     velocidad_final = forms.FloatField(required=False, label='Velocidad final (m/s)')
     aceleracion = forms.FloatField(required=False, label='Aceleración (m/s^2)')
     tiempo = forms.FloatField(required=False, label='Tiempo (s)')
+    distancia = forms.FloatField(required=False, label='Distancia (d)')

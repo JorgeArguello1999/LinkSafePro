@@ -46,6 +46,11 @@
         <td>Tiempo (t)</td>
         <td>Velocidad final (v_f), Velocidad inicial (v_i), Aceleración (a)</td>
     </tr>
+    <tr>
+        <td>5</td>
+        <td>Distancia (d)</td>
+        <td>Velocidad inicial (v_i), Aceleración (a), Tiempo (t)</td>
+    </tr>
 </table>
 
 <form method="post" action="">
@@ -67,9 +72,16 @@
   var v_i = document.getElementById('id_velocidad_inicial');
   var a = document.getElementById('id_aceleracion');
   var t = document.getElementById('id_tiempo');
+  var d = document.getElementById('id_distancia');
 
   opcion.addEventListener('change', function() {
     var opcionSeleccionada = opcion.value;
+    v_f.disabled = false;
+    v_i.disabled = false;
+    a.disabled = false;
+    t.disabled = false;
+    d.disabled = false;
+
     switch (opcionSeleccionada) {
       case "v_f":
         v_f.disabled = true;
@@ -83,13 +95,15 @@
       case "t":
         t.disabled = true;
         break;
+      case "d":
+        d.disabled = true;
+        break;
       default:
         break;
     }
   });
 </script>
 {% endblock %}
-
 
 {% block devcontainer %}
 {{ code }}

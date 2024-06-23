@@ -12,6 +12,7 @@ def get(request):
         'velocidad_final': 0,
         'aceleracion': 0,
         'tiempo': 0,
+        'distancia': 0
     })
 
     if request.method == 'POST':
@@ -35,6 +36,9 @@ def get(request):
                 )
                 elif opcion == 't': result = speed.calcular_tiempo(
                     float(velocidad_final), float(velocidad_inicial), float(aceleracion)
+                )
+                elif opcion == 'd': result = speed.calcular_distancia(
+                    float(velocidad_inicial), float(aceleracion), int(tiempo)
                 )
             except Exception as e:
                 print(e)
